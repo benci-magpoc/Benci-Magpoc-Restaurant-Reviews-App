@@ -105,11 +105,17 @@ nav h1 a {
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
   height: 50px;
-  background-color: #3397DB;
+  background-color: #174375;
   align-items: center;
+  padding: 15px 0;
 }
+
+
 .filter-options h2 {
   color: white;
   font-size: 1rem;
@@ -117,16 +123,27 @@ nav h1 a {
   line-height: 1;
   margin: 0 20px;
 }
+
+
+label {
+  visibility: hidden;
+}
+
+
 .filter-options select {
   background-color: white;
   border: 1px solid #fff;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 11pt;
   height: 35px;
   letter-spacing: 0;
-  margin: 10px;
-  padding: 0 10px;
-  width: 200px;
+  margin: 2px;
+  padding: 0 2px;
+}
+
+
+.filter-label {
+  color: white;
 }
 
 /* ====================== Restaurant Listing ====================== */
