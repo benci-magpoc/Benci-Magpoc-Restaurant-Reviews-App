@@ -9,17 +9,19 @@
 </head>
 
 <body>
-  <header>
+  <header tabindex="0">
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
-  <main id="maincontent">
-    <section id="map-container">
+  <main id="maincontent" tabindex="1">
+    <section id="map-container" aria-labelledby="map-description" role="application">
       <div id="map"></div>
     </section>
-    <section>
+
+    <label id="map-description" class="map-description">Mapbox Map Application</label>
+    <section tabindex="2">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
